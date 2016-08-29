@@ -1,0 +1,1 @@
+﻿ALTER TABLE formats add entity_id int 

@@ -1,0 +1,1 @@
+﻿alter TABLE communications add correlative VARCHAR (255)

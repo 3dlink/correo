@@ -1,0 +1,2 @@
+1391552489
+a:2:{i:0;b:0;s:3:"app";a:2:{s:7:"plugins";a:3:{i:0;s:10:"FileUpload";i:1;s:6:"Minify";i:2;s:8:"Usermgmt";}s:10:"Controller";a:12:{i:0;s:13:"AppController";i:1;s:33:"CommunicationCategoriesController";i:2;s:30:"CommunicationTrashesController";i:3;s:28:"CommunicationTypesController";i:4;s:24:"CommunicationsController";i:5;s:18:"EntitiesController";i:6;s:17:"FormatsController";i:7;s:16:"GroupsController";i:8;s:15:"PagesController";i:9;s:22:"RedirectionsController";i:10;s:14:"TagsController";i:11;s:16:"TracesController";}}}

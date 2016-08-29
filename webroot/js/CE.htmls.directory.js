@@ -1,0 +1,324 @@
+$.extend(CE.htmls, {
+	directory: function(data, type){
+		var is_circle = type == 'circles' ? 1 : 0;
+		var html = '<div class="col-xs-12">';
+		var html = '<div>';
+			html = html + '<div class="widget-box transparent">';
+				html = html + '<div class="widget-header">';
+					html = html + '<div class="widget-toolbar no-border" style="float:left;">';
+						html = html + '<ul class="nav nav-tabs" id="myTab2">';
+							html = html + '<li class="'
+							if (data.Tab != 'p') html = html + 'active';
+							html = html + '">';
+								html = html + '<a data-toggle="tab" href="#profile2">Entidades</a>';
+							html = html + '</li>';
+							// html = html + '<li class="'
+							// 	if (data.Tab == 'p') html = html + 'active';
+							// 	html = html + '">';
+							// 		html = html + '<a data-toggle="tab" href="#persons">Personas</a>';
+							// 	html = html + '</li>';
+							if (!is_circle) { 
+								html = html + '<li class="">';
+									html = html + '<a data-toggle="tab" href="#groups">Grupos Estatales</a>';
+								html = html + '</li>';
+								html = html + '<li class="">';
+									html = html + '<a data-toggle="tab" href="#groupsi">Grupos Institucionales</a>';
+								html = html + '</li>';
+								html = html + '<li class="">';
+									html = html + '<a data-toggle="tab" href="#circles">Círculos</a>';
+								html = html + '</li>';
+							}
+						html = html + '</ul>';
+					html = html + '</div>';
+				html = html + '</div>';
+				// cuerpo
+				html = html + '<div class="widget-body">';
+					html = html + '<div class="widget-main padding-12 no-padding-left no-padding-right">';
+						html = html + '<div class="tab-content padding-4">';
+							// tab personas
+							html = html + '<div id="persons" class="tab-pane ';
+							if (data.Tab == 'p') html = html + 'active';
+							html = html + '">';
+								html = html + '<div class="row">';
+									html = html + '<div class="col-xs-6">';
+										html = html + '<div class="input-group">'; 
+											html = html + '<input type="text" placeholder="Buscar ..." class="form-control search-people" id="search-people" autocomplete="off" name="q">';
+											html = html + '<span class="input-group-btn">';
+												html = html + '<button class="btn btn-sm btn-default btnFindByQ" type="button" id="btnFindByQ">';
+													html = html + '<i class="icon-search bigger-110"></i>';
+												html = html + '</button>';
+											html = html + '</span>';
+										html = html + '</div>';
+									html = html + '</div>';
+									html = html + '<div class="col-xs-6">';
+									html = html + '<div class="pull-right spn-send-msg hide">';
+									html = html + '<button class="btn-send-msg btn btn-info" type="button" title="" data-original-title="Agregar a la comunicación"><i class=" icon-envelope bigger-130"></i></button>';
+									html = html + '</div>';
+									html = html + '</div>';
+									html = html + '<br><br>';
+									html = html + '<div class="col-xs-12">';
+										html = html + '<div class="message-container">';
+											html = html + '<div id="id-message-list-navbar" class="message-navbar align-center clearfix">';
+												html = html + '<div class="message-bar">';
+													html = html + '<div class="message-infobar" id="id-message-infobar">';
+														html = html + '<span class="blue bigger-150">&nbsp;</span>';
+													html = html + '</div>';
+												html = html + '</div>';
+												html = html + '<div>';
+													html = html + '<div>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="a">A</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="b">B</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="c">C</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="d">D</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="e">E</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="f">F</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="g">G</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="h">H</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="i">I</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="j">J</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="k">K</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="l">L</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="m">M</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="n">N</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="ñ">Ñ</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="o">O</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="p">P</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="q">Q</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="r">R</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="s">S</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="t">T</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="u">U</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="v">V</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="w">W</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="x">X</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="y">Y</a></span>';
+														html = html + '<span class="abc "><a class="abcd" data-letter="z">Z</a></span>';
+													html = html + '</div>';
+												html = html + '</div>';
+											html = html + '</div>';
+											html = html + '<div class="row">';
+												html = html + '<div class="col-xs-12">';
+													html = html + '<div class="table-responsive">';
+														html = html + '<table id="sample-table-1" class="table table-striped table-bordered table-hover">';
+															html = html + '<thead>';
+																html = html + '<tr>';
+																	html = html + '<th class="center">';
+																	html = html + '<label><input type="checkbox" class="ace" id="checkbox-select-all"><span class="lbl"></span></label>';
+																	html = html + '</th>';
+																	html = html + '<th>Nombre</th>';
+																	html = html + '<th>Apellidos</th>';
+																	html = html + '<th>Teléfono</th>';
+																	html = html + '<th>Móvil</th>';
+																	html = html + '<th>Entidad</th>';
+																	html = html + '<th>Correo</th>';
+																html = html + '</tr>';
+															html = html + '</thead>';
+															html = html + '<tbody>';
+																$.each(data.Users, function(index, user) {
+																	telephone = user.User.telephone ? user.User.telephone : '';
+																	celphone = user.User.celphone ? user.User.celphone : '';
+																	html = html + '<tr data-user-id="'+user.User.id+'" data-user-name="'+user.User.first_name+' '+user.User.last_name+'" data-user-path="'+user.path+'" data-user-celphone="'+celphone+'" data-user-telephone="'+telephone+'">';
+																		html = html + '<td class="text-center">';
+																		html = html + '<label class="middle">';
+																		html = html + '<input class="ace" type="checkbox" id="id-disable-check">';
+																		html = html + '<span class="lbl">&nbsp;</span>';
+																		html = html + '</label>';
+																		html = html + '</td>';
+																		html = html + '<td>'+user.User.first_name+'</td>';
+																		html = html + '<td>'+user.User.last_name+'</td>';
+																		if (user.User.telephone) html = html + '<td>'+user.User.telephone+'</td>';
+																		else html = html + '<td>&nbsp;</td>';
+																		if (user.User.celphone) html = html + '<td>'+user.User.celphone+'</td>';
+																		else html = html + '<td>&nbsp</td>';
+																		html = html + '<td>'+user.path+'</td>';
+																		html = html + '<td>'+user.User.email+'</td>';
+																	html = html + '</tr>';
+																});
+																if ((data.Users).length < 1){
+																	html = html + '<tr>';
+																		html = html + '<td colspan="7" class="text-center"> No hay datos que mostrar </td>';
+																	html = html + '</tr>';
+																}
+															html = html + '</tbody>';
+														html = html + '</table>';
+													html = html + '</div>';
+												html = html + '</div>';
+											html = html + '</div>';
+										html = html + '</div>';
+									html = html + '</div>';
+								html = html + '</div>';
+							html = html + '</div>';
+							
+							// tab entidades
+							html = html + '<div id="profile2" class="tab-pane ';
+							if (data.Tab != 'p') html = html + 'active';
+							html = html + '">';
+								html = html + '<div class="selects-entity">';
+									html = html + '<div class="form-group">';
+										html = html + '<label class="col-sm-1 control-label no-padding-right text-right" for="form-field-1"> Entidad </label>';
+										html = html + '<div class="col-sm-11 ">';
+											html = html + '<select name="entity_id" class="col-xs-10 col-sm-5 s-entity">';
+												html = html + '<option value="0">Seleccione</option>';
+												$.each(data.Entities, function(index, entity) {
+													var child = ((entity.ChildEntity).length > 0) ? '1' : '0';
+													html = html + '<option class="opt-entity" value="'+entity.Entity.id+'" data-child="'+child+'">'+entity.Entity.name+'</option>';
+												});
+											html = html + '</select>';
+										html = html + '</div>';
+									html = html + '</div>';
+									html = html + '<div style="text-align:center;"><i class="i-load hide icon-refresh icon-spin blue"></i></div>';
+								html = html + '</div>';
+								html = html + '<div class=" btns">';
+									html = html + '<span class="spn-send-msg pull-right hide">';
+										html = html + '<button class="btn-send-msg btn btn-info" type="button" title="Agregar a la comunicación">';
+											html = html + '<i class=" icon-envelope bigger-130"></i>';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+									html = html + '<span class="pull-right">';
+										html = html + '<button id="btn-find-by-entity" class="btn btn-info" type="button">';
+											html = html + 'Buscar';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+								html = html + '</div>';
+								html = html + '<div class="row">';
+									html = html + '<div class="col-xs-12">';
+										html = html + '<br>';
+										html = html + '<input style="display:none;" type="text" placeholder="Buscar por nombre" id="searchName">';
+										html = html + '<div class="table-responsive">';
+										html = html + '<div id="count2"></div>';
+											html = html + '<table id="table-2" class="table table-striped table-bordered table-hover"></table>';
+										html = html + '</div>';
+									html = html + '</div>';
+								html = html + '</div>';
+							html = html + '</div>';
+							// fin de tab
+
+							// tab groups
+							if (!is_circle){ 
+							html = html + '<div id="groups" class="tab-pane">';
+								html = html + '<div class="selects-group">';
+									html = html + '<div class="form-group">';
+										html = html + '<label class="col-sm-1 control-label no-padding-right text-right" for="form-field-1"> Grupo Estatal</label>';
+										html = html + '<div class="col-sm-11 ">';
+											html = html + '<select name="group_id" class="col-xs-10 col-sm-5 s-entity">';
+												html = html + '<option value="0">Seleccione</option>';
+												$.each(data.Groups, function(index, group) {
+													html = html + '<option class="opt-group" value="'+index+'" >'+group+'</option>';
+												});
+											html = html + '</select>';
+										html = html + '</div>';
+									html = html + '</div>';
+									html = html + '<div style="text-align:center;"><i class="i-load hide icon-refresh icon-spin blue"></i></div>';
+								html = html + '</div>';
+								html = html + '<div class=" btns">';
+									html = html + '<span class="spn-send-msg pull-right hide">';
+										html = html + '<button class="btn-send-msg btn btn-info" type="button" title="Agregar a la comunicación">';
+											html = html + '<i class=" icon-envelope bigger-130"></i>';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+									html = html + '<span class="pull-right">';
+										html = html + '<button id="btn-find-by-group" class="btn btn-info" type="button">';
+											html = html + 'Buscar';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+								html = html + '</div>';
+								html = html + '<div class="row">';
+									html = html + '<div class="col-xs-12">';
+										html = html + '<br>';
+										html = html + '<div class="table-responsive">';
+										html = html + '<div id="count3"></div>';
+											html = html + '<table id="table-3" class="table table-striped table-bordered table-hover"></table>';
+										html = html + '</div>';
+									html = html + '</div>';
+								html = html + '</div>';
+							html = html + '</div>';
+
+							html = html + '<div id="groupsi" class="tab-pane">';
+								html = html + '<div class="selects-group">';
+									html = html + '<div class="form-group">';
+										html = html + '<label class="col-sm-1 control-label no-padding-right text-right" for="form-field-1"> Grupo Institucional</label>';
+										html = html + '<div class="col-sm-11 ">';
+											html = html + '<select name="group_id" class="col-xs-10 col-sm-5 s-entity">';
+												html = html + '<option value="0">Seleccione</option>';
+												$.each(data.GroupsI, function(index, group) {
+													html = html + '<option class="opt-groupi" value="'+index+'" >'+group+'</option>';
+												});
+											html = html + '</select>';
+										html = html + '</div>';
+									html = html + '</div>';
+									html = html + '<div style="text-align:center;"><i class="i-load hide icon-refresh icon-spin blue"></i></div>';
+								html = html + '</div>';
+								html = html + '<div class=" btns">';
+									html = html + '<span class="spn-send-msg pull-right hide">';
+										html = html + '<button class="btn-send-msg btn btn-info" type="button" title="Agregar a la comunicación">';
+											html = html + '<i class=" icon-envelope bigger-130"></i>';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+									html = html + '<span class="pull-right">';
+										html = html + '<button id="btn-find-by-groupi" class="btn btn-info" type="button">';
+											html = html + 'Buscar';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+								html = html + '</div>';
+								html = html + '<div class="row">';
+									html = html + '<div class="col-xs-12">';
+										html = html + '<br>';
+										html = html + '<div class="table-responsive">';
+										html = html + '<div id="count3i"></div>';
+											html = html + '<table id="table-3i" class="table table-striped table-bordered table-hover"></table>';
+										html = html + '</div>';
+									html = html + '</div>';
+								html = html + '</div>';
+							html = html + '</div>';
+							}
+							// fin de tab
+
+							// tab circulos
+							if (!is_circle){ 
+							html = html + '<div id="circles" class="tab-pane">';
+								html = html + '<div class="selects-circle">';
+									html = html + '<div class="form-group">';
+										html = html + '<label class="col-sm-1 control-label no-padding-right text-right" for="form-field-1"> Círculo </label>';
+										html = html + '<div class="col-sm-11 ">';
+											html = html + '<select name="group_id" class="col-xs-10 col-sm-5 s-entity">';
+												html = html + '<option value="0">Seleccione</option>';
+												$.each(data.Circles, function(index, circle) {
+													html = html + '<option class="opt-circle" value="'+index+'" >'+circle+'</option>';
+												});
+											html = html + '</select>';
+										html = html + '</div>';
+									html = html + '</div>';
+									html = html + '<div style="text-align:center;"><i class="i-load hide icon-refresh icon-spin blue"></i></div>';
+								html = html + '</div>';
+								html = html + '<div class=" btns">';
+									html = html + '<span class="spn-send-msg pull-right hide">';
+										html = html + '<button class="btn-send-msg btn btn-info" type="button" title="Agregar a la comunicación">';
+											html = html + '<i class=" icon-envelope bigger-130"></i>';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+									html = html + '<span class="pull-right">';
+										html = html + '<button id="btn-find-by-circle" class="btn btn-info" type="button">';
+											html = html + 'Buscar';
+										html = html + '</button>&nbsp;';
+									html = html + '</span>';
+								html = html + '</div>';
+								html = html + '<div class="row">';
+									html = html + '<div class="col-xs-12">';
+										html = html + '<br>';
+										html = html + '<div class="table-responsive">';
+										html = html + '<div id="count4"></div>'
+											html = html + '<table id="table-4" class="table table-striped table-bordered table-hover"></table>';
+										html = html + '</div>';
+									html = html + '</div>';
+								html = html + '</div>';
+							html = html + '</div>';
+							}
+							// fin de tab
+						html = html + '</div>';
+					html = html + '</div>';
+				html = html + '</div>';
+			html = html + '</div>';
+		html = html + '</div>';
+		return html;
+	}
+});
